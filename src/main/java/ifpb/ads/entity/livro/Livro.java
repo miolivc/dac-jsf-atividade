@@ -1,6 +1,7 @@
-package ifpb.ads.livro;
+package ifpb.ads.entity.livro;
 
-import ifpb.ads.autor.Autor;
+import ifpb.ads.entity.autor.Autor;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,7 @@ import java.util.List;
  * @mail ricardo.job@ifpb.edu.br
  * @since 17/06/2017, 12:25:12
  */
-public class Livro {
+public class Livro implements Serializable {
 
     private String descricao;
     private String ISBN;

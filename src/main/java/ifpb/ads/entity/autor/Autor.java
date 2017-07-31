@@ -1,4 +1,4 @@
-package ifpb.ads.autor;
+package ifpb.ads.entity.autor;
 
 /**
  * @author Ricardo Job

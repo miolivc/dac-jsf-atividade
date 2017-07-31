@@ -1,6 +1,6 @@
-package ifpb.ads.emprestimo;
+package ifpb.ads.entity.emprestimo;
 
-import ifpb.ads.livro.Livro;
+import ifpb.ads.entity.livro.Livro;
 import java.time.LocalDate;
 
 /**

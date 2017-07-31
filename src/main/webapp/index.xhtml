@@ -1,12 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
         <title>Facelet Title</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Emprestimo</a></li>
+                    <li><a href="#">Devoluçao</a></li>
+                    <li><a href="#">Autor</a></li>
+                    <li><a href="#">Livro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <ui:composition class="main">
+            <h1>
+                <strong>Seja Bem Vindo!</strong>
+            </h1>
+        </ui:composition>
+        <footer>
+            <p><strong>&copy; Copyright, 2017</strong><br></br>Todos os direitos reservados!</p>
+        </footer>
     </h:body>
 </html>
 

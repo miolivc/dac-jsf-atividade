@@ -1,4 +1,4 @@
-package ifpb.ads.emprestimo;
+package ifpb.ads.entity.emprestimo;
 
 /**
  * @author Ricardo Job
