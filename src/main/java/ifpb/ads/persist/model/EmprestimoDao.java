@@ -5,10 +5,14 @@
  */
 package ifpb.ads.persist.model;
 
+import ifpb.ads.entity.emprestimo.Emprestimo;
+
 /**
  *
  * @author miolivc
  */
 public interface EmprestimoDao {
+    
+    void add(Emprestimo emprestimo);
     
 }

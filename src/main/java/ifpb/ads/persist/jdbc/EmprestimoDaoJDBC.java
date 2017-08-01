@@ -16,7 +16,7 @@ public class EmprestimoDaoJDBC implements EmprestimoDao {
 
     @Override
     public void add(Emprestimo emprestimo) {
-        
+        throw new RuntimeException();
     }
     
 }
