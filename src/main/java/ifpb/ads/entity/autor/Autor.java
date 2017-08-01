@@ -1,11 +1,17 @@
 package ifpb.ads.entity.autor;
 
+import java.io.Serializable;
+import javax.enterprise.inject.Produces;
+import javax.inject.Named;
+
 /**
  * @author Ricardo Job
  * @mail ricardo.job@ifpb.edu.br
  * @since 17/06/2017, 12:22:51
  */
-public class Autor {
+
+@Named
+public class Autor implements Serializable {
 
     private String nome;
     private String email;

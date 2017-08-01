@@ -9,7 +9,7 @@ import ifpb.ads.entity.autor.Autor;
 import ifpb.ads.persist.model.AutorDao;
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
-import javax.inject.Inject;
+import ifpb.ads.persist.jdbc.AutorDaoJDBC;
 import javax.inject.Named;
 
 /**
@@ -20,10 +20,8 @@ import javax.inject.Named;
 @SessionScoped
 public class AutorManager implements Serializable {
     
-    @Inject 
-    private Autor autor;
-    @Inject
-    private AutorDao manager;
+    private Autor autor = new Autor();
+    private AutorDao manager = new AutorDaoJDBC();
 
     public Autor getAutor() {
         return autor;

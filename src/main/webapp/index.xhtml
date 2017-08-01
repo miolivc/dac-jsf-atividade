@@ -5,27 +5,23 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
         <title>Facelet Title</title>
-        <link rel="stylesheet" href="css/main.css" type="text/css"/>
+        <link rel="stylesheet" href="./css/main.css" type="text/css"/>
     </h:head>
     <h:body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Emprestimo</a></li>
-                    <li><a href="#">Devoluçao</a></li>
-                    <li><a href="#">Autor</a></li>
-                    <li><a href="#">Livro</a></li>
-                </ul>
-            </nav>
-        </header>
-        <ui:composition class="main">
-            <h1>
-                <strong>Seja Bem Vindo!</strong>
-            </h1>
-        </ui:composition>
-        <footer>
+        <ui:insert name="header" class="header">
+            <ul>
+                <li><a href="#">Emprestimo</a></li>
+                <li><a href="#">Devoluçao</a></li>
+                <li><a href="#">Autor</a></li>
+                <li><a href="#">Livro</a></li>
+            </ul>
+        </ui:insert>
+        <ui:insert name="main" class="main">
+            <h1>Seja Bem Vindo!</h1>
+        </ui:insert>
+        <ui:insert name="footer" class="footer">
             <p><strong>&copy; Copyright, 2017</strong><br></br>Todos os direitos reservados!</p>
-        </footer>
+        </ui:insert>
     </h:body>
 </html>
 

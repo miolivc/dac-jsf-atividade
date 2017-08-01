@@ -6,6 +6,7 @@
 package ifpb.ads.controller;
 
 import ifpb.ads.entity.emprestimo.Emprestimo;
+import ifpb.ads.persist.jdbc.EmprestimoDaoJDBC;
 import ifpb.ads.persist.model.EmprestimoDao;
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
@@ -20,10 +21,8 @@ import javax.inject.Named;
 @SessionScoped
 public class EmprestimoManager implements Serializable {
     
-    @Inject
-    private Emprestimo emprestimo;
-    @Inject
-    private EmprestimoDao manager;
+    private Emprestimo emprestimo = new Emprestimo();
+    private EmprestimoDao manager = new EmprestimoDaoJDBC();
 
     public Emprestimo getEmprestimo() {
         return emprestimo;

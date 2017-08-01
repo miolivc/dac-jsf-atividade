@@ -4,12 +4,15 @@ import ifpb.ads.entity.autor.Autor;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import javax.inject.Named;
 
 /**
  * @author Ricardo Job
  * @mail ricardo.job@ifpb.edu.br
  * @since 17/06/2017, 12:25:12
  */
+
+@Named
 public class Livro implements Serializable {
 
     private String descricao;

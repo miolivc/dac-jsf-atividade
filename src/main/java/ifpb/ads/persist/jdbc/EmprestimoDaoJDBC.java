@@ -6,14 +6,23 @@
 package ifpb.ads.persist.jdbc;
 
 import ifpb.ads.entity.emprestimo.Emprestimo;
+import ifpb.ads.factory.ConnectionFactory;
 import ifpb.ads.persist.model.EmprestimoDao;
+import java.sql.Connection;
 
 /**
  *
  * @author miolivc
  */
 public class EmprestimoDaoJDBC implements EmprestimoDao {
+    
+    
+    private Connection connection;
 
+    public EmprestimoDaoJDBC() {
+        this.connection = ConnectionFactory.getConnection();
+    }
+    
     @Override
     public void emprestar(Emprestimo emprestimo) {
         throw new RuntimeException();

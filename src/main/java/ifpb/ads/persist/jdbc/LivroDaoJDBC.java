@@ -7,6 +7,7 @@ package ifpb.ads.persist.jdbc;
 
 import ifpb.ads.persist.model.LivroDao;
 import ifpb.ads.entity.livro.Livro;
+import ifpb.ads.factory.ConnectionFactory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,15 +18,18 @@ import java.util.Collections;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.inject.Inject;
 
 /**
  *
  * @author miolivc
  */
 public class LivroDaoJDBC implements LivroDao {
-    @Inject
+    
     private Connection connection;
+
+    public LivroDaoJDBC() {
+        this.connection = ConnectionFactory.getConnection();
+    }
     
     @Override
     public void add(Livro livro) {

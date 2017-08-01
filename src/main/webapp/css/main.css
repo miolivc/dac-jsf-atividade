@@ -15,10 +15,15 @@ html, body {
     height: 100%;
 }
 
-header, footer {
+.header, .footer {
     width: 100%;
-    min-height: 5%;
+    min-height: 10%;
     padding: 1%;
-    color: blueviolet;
+    color: white;
+    background: blueviolet;
+}
+
+.main {
+    color: red;
 }
 

@@ -7,6 +7,7 @@ package ifpb.ads.persist.jdbc;
 
 import ifpb.ads.entity.autor.Autor;
 import ifpb.ads.entity.autor.CPF;
+import ifpb.ads.factory.ConnectionFactory;
 import ifpb.ads.persist.model.AutorDao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -24,10 +25,16 @@ import javax.inject.Inject;
  *
  * @author miolivc
  */
+
 public class AutorDaoJDBC implements AutorDao {
-    @Inject
+    
+    
     private Connection connection;
 
+    public AutorDaoJDBC() {
+        this.connection = ConnectionFactory.getConnection();
+    }
+    
     @Override
     public void add(Autor autor) {
         try {
