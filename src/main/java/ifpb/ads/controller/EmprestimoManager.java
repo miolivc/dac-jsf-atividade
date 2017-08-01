@@ -34,7 +34,7 @@ public class EmprestimoManager implements Serializable {
     }
     
     public String addEmprestimo() {
-        manager.add(emprestimo);
+        manager.emprestar(emprestimo);
         return null;
     }
     

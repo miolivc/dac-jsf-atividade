@@ -13,6 +13,6 @@ import ifpb.ads.entity.emprestimo.Emprestimo;
  */
 public interface EmprestimoDao {
     
-    void add(Emprestimo emprestimo);
-    
+    void emprestar(Emprestimo emprestimo);
+    void devolver(Emprestimo emprestimo);
 }

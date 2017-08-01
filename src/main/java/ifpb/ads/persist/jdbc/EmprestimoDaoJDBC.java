@@ -15,8 +15,12 @@ import ifpb.ads.persist.model.EmprestimoDao;
 public class EmprestimoDaoJDBC implements EmprestimoDao {
 
     @Override
-    public void add(Emprestimo emprestimo) {
+    public void emprestar(Emprestimo emprestimo) {
         throw new RuntimeException();
     }
     
+    @Override
+    public void devolver(Emprestimo emprestimo) {
+        throw new RuntimeException();
+    }
 }
