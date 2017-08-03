@@ -9,21 +9,57 @@ and open the template in the editor.
 */
 
 html, body {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
+    text-align: center;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .header, .footer {
     width: 100%;
-    min-height: 10%;
-    padding: 1%;
+    height: 12%;
     color: white;
-    background: blueviolet;
+    background: teal;
+}
+
+.header {
+    top: 0;
+    border-bottom: 2px solid crimson;
+}
+
+.footer {
+    bottom: 0;
+    border-top: 2px solid crimson;
 }
 
 .main {
-    color: red;
+    margin: auto;
+    min-height: 75%;
 }
 
+.main h1 {
+    padding: 5% 0 0 0;
+    color: crimson;
+    width: 80%;
+    margin: auto;
+    border-bottom: 2px solid;
+}
+
+.menu li {
+    margin: 0 auto;
+    padding-top: 5%;
+    display: inline-block;
+    list-style: none;
+    width: 15%;
+    height: 100px;
+    margin-right: 2%;
+    background: crimson;
+    text-transform: uppercase;
+}
+
+.menu a {
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}

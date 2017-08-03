@@ -5,22 +5,30 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
         <title>Facelet Title</title>
-        <link rel="stylesheet" href="${facesContext.externalContext.requestContextPath}/css/main.css" type="text/css"/>
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
     </h:head>
     <h:body>
         <ui:insert name="header" class="header">
-            <ul>
-                <li><a href="#">Emprestimo</a></li>
-                <li><a href="#">Devoluçao</a></li>
-                <li><a href="#">Autor</a></li>
-                <li><a href="#">Livro</a></li>
-            </ul>
+            <div class="header">
+                
+            </div>
         </ui:insert>
-        <ui:insert name="main" class="main">
-            <h1>Seja Bem Vindo!</h1>
+        <ui:insert name="main">
+            <div class="main">
+                <h1>Seja Bem-vindo!</h1><br/>
+                <ul class="menu">
+                    <a href="#"><li>Emprestimo</li></a>
+                    <a href="#"><li>Devoluçao</li></a>
+                    <a href="#"><li>Autores</li></a>
+                    <a href="cadastro-livro.xhtml"><li>Livros</li></a>
+                </ul>
+            </div>
         </ui:insert>
         <ui:insert name="footer" class="footer">
-            <p><strong>&copy; Copyright, 2017</strong><br></br>Todos os direitos reservados!</p>
+            <div class="footer">
+                <p><strong>&copy; Copyright, 2017</strong><br></br>Todos os direitos reservados!</p>
+            </div>
         </ui:insert>
     </h:body>
 </html>
